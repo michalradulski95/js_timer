@@ -6,8 +6,8 @@ var counter = setInterval(function() {
     var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-    document.getElementById("dni").innerHTML = days;
-    document.getElementById("godziny").innerHTML = hours;
-    document.getElementById("minuty").innerHTML = minutes;
-    document.getElementById("sekundy").innerHTML = seconds;
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
 }, 1000);
